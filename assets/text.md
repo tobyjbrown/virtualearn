@@ -67,3 +67,25 @@ Read More
 "Parents of students always want to feel like they are getting the best value for their money and VirtuaLearn gives them that. I'm able to set specific homeworks so that my students have fun learning the stuff that is often boring, in fact, they have so much fun that many parents have decided to take lessons as well! The VirtuaLearn software gives my business a competitive edge that has helped me to grow my income."
 
 "...has helped me to grow my income."
+
+<!-- FAQ Page -->
+
+What devices are supported?
+
+It depends. We have a range of software products that are supported by a range of devices, be it desktop, tablet, mobile or even smart TV. We recommend getting in touch to discuss your individual needs.
+
+How much does VirtuaLearn cost?
+
+Again, it depends! We tailor our products to each of our client's needs. A license for a few software tools could cost £100 - £200, but a large-scale bespoke project would cost considerably more. We recommend getting in touch for a price catalogue.
+
+Are discounts available?
+
+We will work with you to find the best agreement possible. Prices are often adjusted for the number of devices / machines and the length of the license. 
+
+What support is given if something goes wrong?
+
+When you purchase any VirtuaLearn software for your business / organisation you are also given access to a product assistant should you have any questions or run into issues with the software. We always provide clients with the necessary documentation and instructions.
+
+Do you offer trial periods?
+
+We currently offer trial periods for our popular products. We recommend getting in touch for a full catalogue of available products.

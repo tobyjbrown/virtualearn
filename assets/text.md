@@ -89,3 +89,21 @@ When you purchase any VirtuaLearn software for your business / organisation you 
 Do you offer trial periods?
 
 We currently offer trial periods for our popular products. We recommend getting in touch for a full catalogue of available products.
+
+<!-- Demo Page -->
+
+Under the C
+
+Test your knowledge of the staff with this underwater adventure!
+
+How to play: Click the correct note name of the note shown at the bottom. But be quick, or you'll crash the submarine!
+
+<!-- Demo Page / Coming Soon -->
+
+Little Creatives is a library of educational games and activities that improve key skills in music and the arts. 
+
+Under the C is just one of 50 games in our upcoming Little Creatives suite. We will be adding more live demos soon, just sign up to our newsletter and recieve a 20% discount when you pre-order. 
+
+<!-- Contact Page -->
+
+If you are interested in VirtuaLearn for your business or organisation, please fill in your details, along with your enquiry. We look forward to hearing from you.

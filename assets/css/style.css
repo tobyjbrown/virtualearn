@@ -271,3 +271,80 @@ nav a {
 .img-3 {
     background-image: url(../imgs/site/testimonial-3.jpg);
 }
+
+/* FOOTER */
+
+footer {
+    padding: 3em 0;
+    background-color: #1d1d1d;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-newsletter-social-column {
+    /* width: 40%; */
+}
+
+.footer-newsletter-form {
+    color: #1d1d1d;
+    margin-bottom: 1em;
+}
+
+.footer-newsletter-form-label {
+    display: block;
+    color: #fee034;
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: .5em;
+}
+
+.footer-newsletter-form-input,
+.footer-newsletter-form-btn {
+    padding: 1em 2.5em 1em 1em;
+    font-size: 1rem;
+}
+
+.footer-newsletter-form-btn {
+    background-color: #fee034;
+    font-weight: 700;
+    border: none;
+    border-radius: 0px 50px 50px 0px;
+    letter-spacing: .5px;
+}
+
+.footer-img {
+    /* width: 20%; */
+    justify-self: self-start;
+    align-self: center;
+    max-width: 350px;
+}
+
+.footer-social,
+.footer-copyright {
+    color: rgb(255, 255, 255, 0.9)
+}
+
+.footer-social-text {
+    margin-bottom: 1em;
+}
+
+.footer-social-links {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+}
+
+.footer-social-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-copyright {
+    text-align: center;
+    margin-top: 1em;
+}

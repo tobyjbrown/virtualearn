@@ -108,7 +108,7 @@ nav a {
 /* FEATURES */
 
 .features {
-    padding: 4em 0;
+    padding: 5em 0;
     background-color: #fee034;
 }
 
@@ -146,7 +146,7 @@ nav a {
 /* SHOWCASE */
 
 .showcase {
-    padding: 5em 0;
+    padding: 6em 0;
     background: url(../imgs/site/showcase-bg.png) no-repeat;
     background-size: cover;
 }
@@ -187,4 +187,87 @@ nav a {
     order: -1;
     width: 500px;
     margin-top: 1em;
+}
+
+/* TESTIMONIALS */
+
+.testimonials {
+    background: url('../imgs/site/testimonials-bg.jpg') no-repeat;
+    background-size: cover;
+    padding: 6em 0;
+}
+
+.container-testimonials,
+.carousel-cards,
+.carousel-card {
+    display: flex;
+}
+
+.container-testimonials {
+    margin: 0 auto;
+    width: max-content;
+    align-items: center;
+}
+
+.carousel-cards {
+    overflow: hidden;
+    padding: 1em;
+}
+
+.carousel-card {
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffffffc2;
+    padding: 2.5em;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px rgb(123, 123, 123);
+}
+
+.carousel-card-text {
+    width: 50%;
+}
+
+.carousel-card-quote {
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+
+.carousel-card-description {
+    font-size: 1rem;
+    margin-bottom: 1em;
+    line-height: 1.6em;
+}
+
+.carousel-card-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    padding: 1em 2.5em;
+    background-color: #fee034;
+    border-radius: 50px;
+    font-weight: 700;
+}
+
+.carousel-card-img {
+    order: -1;
+    width: 300px;
+    align-self: stretch;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.img-1 {
+    background-image: url(../imgs/site/testimonial-1.jpg);
+}
+
+.img-2 {
+    background-image: url(../imgs/site/testimonial-2.jpg);
+}
+
+.img-3 {
+    background-image: url(../imgs/site/testimonial-3.jpg);
 }

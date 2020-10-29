@@ -142,3 +142,49 @@ nav a {
 .features-column-body-emphasis {
     font-weight: 700;
 }
+
+/* SHOWCASE */
+
+.showcase {
+    padding: 5em 0;
+    background: url(../imgs/site/showcase-bg.png) no-repeat;
+    background-size: cover;
+}
+
+.container-showcase {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.showcase-text {
+    text-align: right;
+    width: 40%;
+}
+
+.showcase-text-title {
+    font-size: 3rem;
+    margin-bottom: .25em;
+}
+
+.showcase-text-body {
+    font-size: 1.25rem;
+    margin-bottom: 1em;
+}
+
+.showcase-text-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    padding: 1em 2.5em;
+    background-color: #fee034;
+    font-weight: 700;
+    border-radius: 50px;
+    margin-left: 1em;
+}
+
+.showcase-img {
+    order: -1;
+    width: 500px;
+    margin-top: 1em;
+}

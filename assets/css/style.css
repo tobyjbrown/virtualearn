@@ -205,7 +205,7 @@ nav a {
 
 .container-testimonials {
     margin: 0 auto;
-    width: max-content;
+    /* width: max-content; fixes issue with buttons outside layout */
     align-items: center;
 }
 

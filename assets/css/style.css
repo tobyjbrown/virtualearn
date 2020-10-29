@@ -26,11 +26,15 @@ body {
 
 .container {
     width: 90%;
-    max-width: 1080px;
+    max-width: 1480px;
     margin: 0 auto;
 }
 
 /* HEADER */
+
+header {
+    margin: .5em 0;
+}
 
 .container-header,
 nav ul {
@@ -66,4 +70,37 @@ nav li {
 nav a {
     text-decoration: none;
     color: inherit;
+}
+
+/* HERO */
+
+.hero {
+    padding: 1em 0;
+}
+
+.container-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text {
+    width: 40%;
+}
+
+.hero-title {
+    font-size: 4rem;
+    margin-bottom: .25em;
+}
+
+.hero-tagline {
+    font-size: 1.4rem;
+}
+
+.hero-tagline-emphasis {
+    font-weight: 700;
+}
+
+.hero-image {
+    width: 55%;
 }

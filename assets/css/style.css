@@ -75,7 +75,7 @@ nav a {
 /* HERO */
 
 .hero {
-    padding: 1em 0;
+    padding: 2em 0;
 }
 
 .container-hero {
@@ -89,12 +89,12 @@ nav a {
 }
 
 .hero-title {
-    font-size: 4rem;
+    font-size: 4.25rem;
     margin-bottom: .25em;
 }
 
 .hero-tagline {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
 .hero-tagline-emphasis {
@@ -103,4 +103,42 @@ nav a {
 
 .hero-image {
     width: 55%;
+}
+
+/* FEATURES */
+
+.features {
+    padding: 4em 0;
+    background-color: #fee034;
+}
+
+.container-features {
+    display: flex;
+    justify-content: space-around;
+}
+
+.features-column {
+    text-align: center;
+    width: 28%;
+}
+
+.features-column-title {
+    font-size: 1.75rem;
+    margin-bottom: .5em;
+}
+
+.features-column-underline {
+    width: 70px;
+    height: 5px;
+    background-color: rgb(8, 19, 8);
+    margin: 0 auto 1em auto;
+
+}
+
+.features-column-body {
+    line-height: 1.6em;
+}
+
+.features-column-body-emphasis {
+    font-weight: 700;
 }

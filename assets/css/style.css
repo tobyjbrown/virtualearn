@@ -75,6 +75,8 @@ nav a {
     padding: 1em 1.5em; /* increases clickable area */
 }
 
+/* ACTIVE / HOVER EFFECTS */
+
 .nav-link-active {
     font-weight: 400;
 }
@@ -99,10 +101,31 @@ nav a {
     width: 100%;
 }
 
+/* DROPDOWN */
+
+.dropdown-arrow {
+    display: inline-block;
+    margin-left: .4em;
+    transition: all ease 500ms;
+}
+
+.dropdown-arrow-closed {
+    transform: rotate(-180deg);
+}
+
+.dropdown-arrow-open {
+    transform: rotate(0deg);
+}
+
+.dropdown-menu-links {
+    position: absolute;
+    background-color: white;
+}
+
 /* HERO */
 
 .hero {
-    padding: 2em 0;
+    padding: 1em 0 2em 0;
 }
 
 .container-hero {

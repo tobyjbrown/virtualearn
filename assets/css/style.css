@@ -261,19 +261,30 @@ nav a {
     display: flex;
 }
 
+.carousel-control {
+    cursor: pointer;
+    padding: 50px; /* gives nice big clickable area */
+    transition: all ease 500ms;
+}
+
+.carousel-control:hover,
+.carousel-control:focus {
+    /* color: #ffe23c; */
+    transform: scale(1.25);
+}
+
 .container-testimonials {
     margin: 0 auto;
-    /* width: max-content; fixes issue with buttons outside layout */
     align-items: center;
 }
 
 .carousel-cards {
     overflow: hidden;
-    padding: 1em;
+    padding: 1em 0;
 }
 
 .carousel-card {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     align-items: center;
     justify-content: space-around;
@@ -306,6 +317,7 @@ nav a {
     background-color: #fee034;
     border-radius: 50px;
     font-weight: 700;
+    text-shadow: none;
 }
 
 .carousel-card-img {

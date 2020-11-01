@@ -43,7 +43,7 @@ Rebuilt carousel component from scratch. Carried out the following manual testin
 | **Carousel Next Button** | Transitions to the next card and updates the navigation buttons. | Yes | N/A |
 | **Carousel Previous Button** | Transitions to the previous card and updates the navigation buttons | Yes | N/A |
 
-!["The carousel nav buttons updating depending on next/previous button clicked by user."](assets/write-up/carousel-nav-btns-updating-test)
+!["The carousel nav buttons updating depending on next/previous button clicked by user."](assets/write-up/carousel-nav-btns-updating-test.gif)
 
 ### Test 4 - Carousel should accommodate for new cards added to html
 | Component | Intended function | Works as intended? | Fix |

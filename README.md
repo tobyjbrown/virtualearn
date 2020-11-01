@@ -34,4 +34,4 @@ Rebuilt carousel component from scratch. Carried out the following manual testin
 | **Carousel Next Button** | Transitions to the next card of the carousel. | Yes | N/A |
 | **Carousel Previous Button** | Transitions to the previous card of the carousel. | Yes | N/A |
 
-!["The carousel changing card depending on next/previous button clicked by user."](assets/write-up/carousel-next-prev-btns-class-test.gif)
+!["The carousel changing card depending on next/previous button clicked by user."](assets/write-up/carousel-next-prev-btns-transition-test.gif)

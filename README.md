@@ -67,3 +67,11 @@ Rebuilt carousel component from scratch. Carried out the following manual testin
 | **Carousel Nav Button 3** | Should transition to third card, from any starting card | Yes | N/A |
 
 !["The carousel navigation buttons work as expected."](assets/write-up/carousel-navigation-btns-test.gif)
+
+### Test 7 - Carousel is responsive to window resizing
+
+| Component | Intended function | Works as intended? | Fix |
+| --------- | ----------------- | ------------------ | --- |
+| **Carousel** | Should change size with browser window, not showing any hidden cards, controls should work as tested previously | Yes | N/A |
+
+!["The carousel is responsive and fully functional"](assets/write-up/carousel-responsive-test.gif)

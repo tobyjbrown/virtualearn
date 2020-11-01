@@ -264,7 +264,7 @@ nav a {
     margin: 0 auto;
 }
 
-.carousel-container {
+.carousel-track-container {
     position: relative;
     background-color: khaki;
     overflow: hidden;

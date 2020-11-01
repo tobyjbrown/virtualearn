@@ -26,3 +26,12 @@ Rebuilt carousel component from scratch. Carried out the following manual testin
 | **Carousel Previous Button** | Removes 'current-card' class from the element that has it and adds it to that element's previous sibling. | Yes, but throws error when class is on first sibling | Remove button from DOM when there are no previous siblings. |
 
 !["The DOM being manipulated when the user clicks the next/previous carousel buttons."](assets/write-up/carousel-next-prev-btns-class-test.gif)
+
+### Test 2 - Using the 'next' and 'previous' carousel buttons to show next/previous card
+
+| Component | Intended function | Works as intended? | Fix |
+| --------- | ----------------- | ------------------ | --- |
+| **Carousel Next Button** | Transitions to the next card of the carousel. | Yes | N/A |
+| **Carousel Previous Button** | Transitions to the previous card of the carousel. | Yes | N/A |
+
+!["The carousel changing card depending on next/previous button clicked by user."](assets/write-up/carousel-next-prev-btns-class-test.gif)

@@ -22,7 +22,7 @@ Rebuilt carousel component from scratch. Carried out the following manual testin
 
 | Component | Intended function | Works as intended? | Fix |
 | --------- | ----------------- | ------------------ | --- |
-| **Carousel Next Button** | Removes 'current-card' class from the element that has it and adds it to that element's next sibling. | Yes, but throws error when class is on last sibling | Remove button from DOM when there are no siblings left |
-| **Carousel Previous Button** | Removes 'current-card' class from the element that has it and adds it to that element's previous sibling. | Yes, but throws error when class is on last sibling | Remove button from DOM when there are no siblings left |
+| **Carousel Next Button** | Removes 'current-card' class from the element that has it and adds it to that element's next sibling. | Yes, but throws error when class is on last sibling | Remove button from DOM when there are no further siblings left. |
+| **Carousel Previous Button** | Removes 'current-card' class from the element that has it and adds it to that element's previous sibling. | Yes, but throws error when class is on first sibling | Remove button from DOM when there are no previous siblings. |
 
 !["The DOM being manipulated when the user clicks the next/previous carousel buttons."](assets/write-up/carousel-next-prev-btns-class-test.gif)

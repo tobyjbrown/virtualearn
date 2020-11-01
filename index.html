@@ -77,43 +77,36 @@
 
         <section class="testimonials">
             <div class="container container-testimonials">
-                <div class="carousel-control carousel-control-left fa-3x">
-                    <i class="fas fa-chevron-circle-left"></i>
-                </div>
+                <div class="carousel">
+                    <button class="carousel-button carousel-button-prev">
+                        <i class="fas fa-chevron-circle-left fa-5x"></i>
+                    </button>
 
-                <div class="carousel-cards">
-                    <div class="carousel-card"  style="display: none;">
-                        <article class="carousel-card-text">
-                            <h3 class="carousel-card-quote">"...I'm always excited to start practicing."</h3>
-                            <p class="carousel-card-description">Anna was struggling to stay motivated when learning to play the piano. VirtuaLearn changed that!</p>
-                            <a class="carousel-card-btn" href="#">Read More</a>
-                        </article>
-                        <div class="carousel-card-img img-1"></div>
+                    <div class="carousel-container">
+                        <ul class="carousel-track">
+                            <li class="carousel-card current-card">
+                                <img src="https://via.placeholder.com/500/FF0000" alt="">
+                            </li>
+                            <li class="carousel-card">
+                                <img src="https://via.placeholder.com/500/00FF00" alt="">
+                            </li>
+                            <li class="carousel-card">
+                                <img src="https://via.placeholder.com/500/0000FF" alt="">
+                            </li>
+                        </ul>
                     </div>
 
-                    <div class="carousel-card" style="display: none;">
-                        <article class="carousel-card-text">
-                            <h3 class="carousel-card-quote">"VirtuaLearn has helped my class develop a love for traditional subjects."</h3>
-                            <p class="carousel-card-description">VirtuaLearn's game-based learning tools helped Maria's class ace their maths and english SATs.</p>
-                            <a class="carousel-card-btn" href="#">Read More</a>
-                        </article>
-                        <div class="carousel-card-img img-2"></div>
-                    </div>
+                    <button class="carousel-button carousel-button-next">
+                        <i class="fas fa-chevron-circle-right fa-5x"></i>
+                    </button>
 
-                    <div class="carousel-card">
-                        <article class="carousel-card-text">
-                            <h3 class="carousel-card-quote">"The VirtuaLearn software gives my teaching business a competitive edge..."</h3>
-                            <p class="carousel-card-description">Paul uses VirtuaLearn to set homework for his students - parents and students love it.</p>
-                            <a class="carousel-card-btn" href="#">Read More</a>
-                        </article>
-                        <div class="carousel-card-img img-3"></div>
+                    <div class="carousel-nav">
+                        <button class="carousel-nav-button current-card"></button>
+                        <button class="carousel-nav-button"></button>
+                        <button class="carousel-nav-button"></button>
                     </div>
                 </div>
-
-                <div class="carousel-control carousel-control-right fa-3x">
-                    <i class="fas fa-chevron-circle-right"></i>
-                </div>
-            </div> <!-- /carousel -->
+            </div>
         </section>
     </main>
 

@@ -44,3 +44,17 @@ Rebuilt carousel component from scratch. Carried out the following manual testin
 | **Carousel Previous Button** | Transitions to the previous card and updates the navigation buttons | Yes | N/A |
 
 !["The carousel nav buttons updating depending on next/previous button clicked by user."](assets/write-up/carousel-nav-btns-updating-test)
+
+### Test 4 - Carousel should accommodate for new cards added to html
+| Component | Intended function | Works as intended? | Fix |
+| --------- | ----------------- | ------------------ | --- |
+| **Carousel** - 3 new cards added to original. | Navigation buttons should be added, next/prev buttons should disappear and reappear correctly. | Yes | N/A |
+
+!["The carousel accommodates for new cards added to the html"](assets/write-up/carousel-cards-added-test.gif)
+
+### Test 5 - Carousel should accommodate for cards removed from html
+| Component | Intended function | Works as intended? | Fix |
+| --------- | ----------------- | ------------------ | --- |
+| **Carousel** - 2 cards removed from original. | Only one navigation button should be present, next/prev buttons should not be visible. | No, previous button is still visible. | Fix conditional statement in updateCarouselButtons function. |
+
+!["The carousel accommodates for cards removed from carousel"](assets/write-up/carousel-cards-removed-test.jpg)

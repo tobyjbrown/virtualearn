@@ -57,10 +57,13 @@ const moveTrack = function(card) {
 const updateCarouselButtons = () => {
     if(!$currentCard.nextElementSibling) {
         $carouselNextBtn.style.display = 'none';
-    } else if (!$currentCard.previousElementSibling){
-        $carouselPrevBtn.style.display = 'none';
     } else {
         $carouselNextBtn.style.display = 'block';
+    }
+    
+    if (!$currentCard.previousElementSibling){
+        $carouselPrevBtn.style.display = 'none';
+    } else {
         $carouselPrevBtn.style.display = 'block';
     }
 }

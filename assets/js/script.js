@@ -80,6 +80,7 @@ const updateCarouselNav = function() {
     for(let i = 0; i < $carouselNavBtns.length; i++) {
         $carouselNavBtns[i].classList.remove('current-card');
     }
+    console.log(currentCardNum);
     $carouselNavBtns[currentCardNum].classList.add('current-card');
 }
 
@@ -95,11 +96,12 @@ $carousel.addEventListener('click', function(e) {
             $currentCard.classList.remove('current-card');
             $targetCard = $currentCard.previousElementSibling;
             $targetCard.classList.add('current-card');
+        } else if (btnClicked.classList.contains('carousel-nav-button')) {
+            $currentCard.classList.remove('current-card');
+            let btnClickedIndex = $carouselNavBtns.indexOf(btnClicked);
+            $targetCard = $carouselCards[btnClickedIndex];
+            $targetCard.classList.add('current-card');
         }
-        // check which navigation button was clicked
-        //
-        //
-        //
         moveTrack($targetCard);
         setCurrentCard();
         updateCarouselButtons();

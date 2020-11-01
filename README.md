@@ -58,3 +58,12 @@ Rebuilt carousel component from scratch. Carried out the following manual testin
 | **Carousel** - 2 cards removed from original. | Only one navigation button should be present, next/prev buttons should not be visible. | No, previous button is still visible. | Fix conditional statement in updateCarouselButtons function. |
 
 !["The carousel accommodates for cards removed from carousel"](assets/write-up/carousel-cards-removed-test.jpg)
+
+### Test 6 - Carousel navigation buttons should work correctly
+| Component | Intended function | Works as intended? | Fix |
+| --------- | ----------------- | ------------------ | --- |
+| **Carousel Nav Button 1** | Should transition to first card, from any starting card | Yes | N/A |
+| **Carousel Nav Button 2** | Should transition to second card, from any starting card | Yes | N/A |
+| **Carousel Nav Button 3** | Should transition to third card, from any starting card | Yes | N/A |
+
+!["The carousel navigation buttons work as expected."](assets/write-up/carousel-navigation-btns-test.gif)

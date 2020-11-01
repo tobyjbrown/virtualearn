@@ -25,8 +25,8 @@ const $carouselCards = Array.from($carouselTrack.children);
 const $carouselNextBtn = document.querySelector('.carousel-button-next');
 const $carouselPrevBtn = document.querySelector('.carousel-button-prev');
 const $carouselNav = document.querySelector('.carousel-nav')
-const $carouselNavBtns = Array.from($carouselNav.children);
 
+let $carouselNavBtns;
 let cardWidth;
 let $currentCard;
 let $targetCard;
@@ -39,6 +39,12 @@ const setCardPosition = (card, index) => {
     card.style.left = cardWidth * index + 'px';
     console.log(card);
 };
+
+const createNavButton = () => {
+    let el = document.createElement('button');
+    el.classList.add('carousel-nav-button');
+    $carouselNav.appendChild(el);
+}
 
 const setCurrentCard = function() {
     $currentCard = $carousel.querySelector('.current-card');
@@ -57,6 +63,21 @@ const updateCarouselButtons = () => {
         $carouselNextBtn.style.display = 'block';
         $carouselPrevBtn.style.display = 'block';
     }
+}
+
+const updateCarouselNav = function() {
+    let currentCardNum;
+    for(let i = 0; i < $carouselCards.length; i++) {
+        if($carouselCards[i].classList.contains('current-card')) {
+            currentCardNum = i;
+            break
+        }
+    };
+
+    for(let i = 0; i < $carouselNavBtns.length; i++) {
+        $carouselNavBtns[i].classList.remove('current-card');
+    }
+    $carouselNavBtns[currentCardNum].classList.add('current-card');
 }
 
 $carousel.addEventListener('click', function(e) {
@@ -79,12 +100,16 @@ $carousel.addEventListener('click', function(e) {
         moveTrack($targetCard);
         setCurrentCard();
         updateCarouselButtons();
+        updateCarouselNav();
     }
 });
 
 window.onload = function() {
     setCardWidth();
     $carouselCards.forEach(setCardPosition);
+    $carouselCards.forEach(createNavButton);
+    $carouselNavBtns = Array.from($carouselNav.children);
     setCurrentCard();
     updateCarouselButtons();
+    updateCarouselNav();
 } 

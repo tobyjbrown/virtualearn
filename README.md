@@ -35,3 +35,12 @@ Rebuilt carousel component from scratch. Carried out the following manual testin
 | **Carousel Previous Button** | Transitions to the previous card of the carousel. | Yes | N/A |
 
 !["The carousel changing card depending on next/previous button clicked by user."](assets/write-up/carousel-next-prev-btns-transition-test.gif)
+
+### Test 3 - Carousel navigation updating when user clicks
+
+| Component | Intended function | Works as intended? | Fix |
+| --------- | ----------------- | ------------------ | --- |
+| **Carousel Next Button** | Transitions to the next card and updates the navigation buttons. | Yes | N/A |
+| **Carousel Previous Button** | Transitions to the previous card and updates the navigation buttons | Yes | N/A |
+
+!["The carousel nav buttons updating depending on next/previous button clicked by user."](assets/write-up/carousel-nav-btns-updating-test)

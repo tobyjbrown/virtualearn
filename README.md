@@ -75,3 +75,5 @@ Rebuilt carousel component from scratch. Carried out the following manual testin
 | **Carousel** | Should change size with browser window, not showing any hidden cards, controls should work as tested previously | Yes | N/A |
 
 !["The carousel is responsive and fully functional"](assets/write-up/carousel-responsive-test.gif)
+
+TODO: Replace placeholders with carousel cards, style buttons, add hover effects to other links.

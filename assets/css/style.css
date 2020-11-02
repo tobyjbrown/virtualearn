@@ -276,7 +276,7 @@ nav a {
 
 .carousel-track-container {
     position: relative;
-    background-color: khaki;
+    /* background-color: khaki; */
     overflow: hidden;
     height: 100%;
 }
@@ -287,7 +287,7 @@ nav a {
     margin: 0;
     position: relative;
     height: 100%;
-    transition: transform 250ms ease;
+    transition: transform 750ms;
 }
 
 .carousel-card {
@@ -295,6 +295,9 @@ nav a {
     top: 0px;
     bottom: 0px;
     width: 100%;
+    display: flex;
+    align-items: center;
+
 }
 
 .carousel-button {
@@ -303,6 +306,19 @@ nav a {
     transform: translateY(-50%);
     cursor: pointer;
     z-index: 1;
+    background-color: transparent;
+    border: none;
+    padding: 50px; /* gives big clickable area */
+    transition: all 500ms ease;
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+    color: lightgray;
+}
+
+.carousel-button:active {
+    color: none;
 }
 
 .carousel-button-prev {
@@ -335,9 +351,50 @@ nav a {
 
 /* CAROUSEL CARD CONTENTS */
 
-.carousel-card img {
+.carousel-card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
-    height: 100%;
+    max-width: 800px;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.632);
+    border-radius: 20px;
+    box-shadow: 5px 5px 30px rgb(145, 145, 145);
+    margin: 0 auto;
+    -webkit-transform:translate3d(0,0,0); /* To avoid carousel flickering */
+}
+
+.carousel-card-img {
+    order: -1;
+    width: 35%;
+    height: 75%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 20px;
+}
+
+.carousel-card-text {
+    width: 45%;
+}
+
+.carousel-card-text-quote {
+    font-size: 1.625rem;
+    margin-bottom: .5em;
+}
+
+.carousel-card-text-description {
+    margin-bottom: .75em;
+}
+
+.carousel-card-btn {
+    color: inherit;
+    display: inline-block;
+    padding: 1em 2.5em;
+    background-color: #fee034;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 50px;
 }
 
 /* FOOTER */

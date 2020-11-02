@@ -40,6 +40,41 @@ body {
     margin: 0 auto;
 }
 
+/* BUTTONS */
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    padding: 1em 2.5em 1em 2em;
+    background-color: #fee034;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+
+}
+
+.btn-arrow-left {
+    margin: 1px 10px 0 0;
+}
+
+.btn-arrow-right {
+    margin: 1px 0 0 10px;
+}
+
+.btn-arrow-left,
+.btn-arrow-right {
+    transition: transform 250ms ease;
+}
+
+.btn:hover .btn-arrow-left {
+    transform: translateX(-10px);
+}
+
+.btn:hover .btn-arrow-right {
+    transform: translateX(10px);
+}
+
 /* HEADER */
 
 header {
@@ -241,13 +276,6 @@ nav a {
 }
 
 .showcase-text-btn {
-    display: inline-block;
-    text-decoration: none;
-    color: inherit;
-    padding: 1em 2.5em;
-    background-color: #fee034;
-    font-weight: 700;
-    border-radius: 50px;
     margin-left: 1em;
 }
 
@@ -387,16 +415,6 @@ nav a {
     margin-bottom: .75em;
 }
 
-.carousel-card-btn {
-    color: inherit;
-    display: inline-block;
-    padding: 1em 2.5em;
-    background-color: #fee034;
-    text-decoration: none;
-    font-weight: 700;
-    border-radius: 50px;
-}
-
 /* FOOTER */
 
 footer {
@@ -435,11 +453,8 @@ footer {
 }
 
 .footer-newsletter-form-btn {
-    background-color: #fee034;
-    font-weight: 700;
-    border: none;
     border-radius: 0px 50px 50px 0px;
-    letter-spacing: .5px;
+    border: none;
 }
 
 .footer-img {

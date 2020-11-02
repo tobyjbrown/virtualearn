@@ -3,17 +3,38 @@
 const $dropdownMenu = document.getElementById("dropdownMenu");
 const $dropdownMenuLinks = document.getElementById("dropdownMenuLinks");
 const $dropdownArrow = document.getElementById("dropdownArrow");
+let dropdownClicked = false;
 
-$dropdownMenu.addEventListener('mouseenter', function() {
+const expandDropdown = function() {
     $dropdownMenuLinks.style.display = "block";
     $dropdownArrow.classList.remove('dropdown-arrow-closed');
     $dropdownArrow.classList.add('dropdown-arrow-open');
-});
+};
 
-$dropdownMenu.addEventListener('mouseleave', function() {
+const closeDropdown = function() {
     $dropdownMenuLinks.style.display = "none";
     $dropdownArrow.classList.remove('dropdown-arrow-open');
     $dropdownArrow.classList.add('dropdown-arrow-closed');
+};
+
+$dropdownMenu.addEventListener('click', function() {
+    if(!dropdownClicked) {
+        expandDropdown();
+        dropdownClicked = true;
+    } else {
+        closeDropdown();
+        dropdownClicked = false;
+    }
+});
+
+$dropdownMenu.addEventListener('mouseenter', function() {
+    expandDropdown();
+});
+
+$dropdownMenu.addEventListener('mouseleave', function() {
+    if(!dropdownClicked) {
+        closeDropdown();
+    }
 });
 
 // carousel component
@@ -37,7 +58,6 @@ const setCardWidth = function() {
 
 const setCardPosition = (card, index) => {
     card.style.left = cardWidth * index + 'px';
-    // console.log(card);
 };
 
 const createNavButton = () => {

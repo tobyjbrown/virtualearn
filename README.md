@@ -77,3 +77,9 @@ Rebuilt carousel component from scratch. Carried out the following manual testin
 !["The carousel is responsive and fully functional"](assets/write-up/carousel-responsive-test.gif)
 
 TODO: Replace placeholders with carousel cards, style buttons, add hover effects to other links.
+
+4. 02/11/2020
+
+Carousel card placeholders replaced with styled content. Hover effects added to buttons, button utility classes added. Dropdown accessibility improved.
+
+TODO: Add SVG dividers to create modern curve effect, make navbar stick to top of page, add validation to newsletter email input.

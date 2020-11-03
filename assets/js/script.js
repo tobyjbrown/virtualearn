@@ -1,6 +1,7 @@
 // navbar dropdown menu
 
 const $dropdownMenu = document.getElementById("dropdownMenu");
+const $dropdownMenuBtn = document.getElementById("dropdownMenuBtn");
 const $dropdownMenuLinks = document.getElementById("dropdownMenuLinks");
 const $dropdownArrow = document.getElementById("dropdownArrow");
 let dropdownClicked = false;
@@ -17,7 +18,7 @@ const closeDropdown = function() {
     $dropdownArrow.classList.add('dropdown-arrow-closed');
 };
 
-$dropdownMenu.addEventListener('click', function() {
+$dropdownMenuBtn.addEventListener('click', function() {
     if(!dropdownClicked) {
         expandDropdown();
         dropdownClicked = true;

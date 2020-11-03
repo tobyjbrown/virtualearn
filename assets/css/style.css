@@ -42,6 +42,17 @@ body {
 
 /* BUTTONS */
 
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: black;
+}
+
+button:active {
+    color: black;
+}
+
 .btn {
     display: inline-block;
     text-decoration: none;
@@ -51,7 +62,6 @@ body {
     font-weight: 700;
     border-radius: 50px;
     cursor: pointer;
-
 }
 
 .btn-arrow-left {
@@ -122,12 +132,17 @@ body {
 /* HEADER */
 
 header {
-    margin: .5em 0;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 2;
+    background-color: white;
 }
 
 .container-header,
 nav ul {
     display: flex;
+    position: relative;
 }
 
 .container-header {
@@ -136,8 +151,8 @@ nav ul {
 
 .site-logo {
     width: 60%;
-    max-width: 250px;
-    align-self: flex-start;
+    max-width: 200px;
+    align-self: center;
 }
 
 nav {
@@ -149,15 +164,22 @@ nav ul {
     list-style-type: none;
     padding: 0;
     justify-content: space-between;
+    font-weight: 100;
 }
 
-nav li {
+nav li,
+nav li button {
     text-transform: uppercase;
-    font-weight: 100;
     letter-spacing: 1px;
 }
 
-nav a {
+nav li button {
+    font-weight: 200;
+    font-size: inherit;
+}
+
+nav a,
+nav li button {
     text-decoration: none;
     color: inherit;
     display: inline-block;
@@ -208,6 +230,7 @@ nav a {
 
 .dropdown-menu-links {
     position: absolute;
+    padding-top: 1em;
     background-color: white;
 }
 
@@ -215,6 +238,7 @@ nav a {
 
 .hero {
     padding: 1em 0 2em 0;
+    margin-top: 5em;
 }
 
 .container-hero {
@@ -378,10 +402,7 @@ nav a {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    cursor: pointer;
     z-index: 1;
-    background-color: transparent;
-    border: none;
     padding: 50px; /* gives big clickable area */
     transition: all 500ms ease;
 }
@@ -389,10 +410,6 @@ nav a {
 .carousel-button:hover,
 .carousel-button:focus {
     color: lightgray;
-}
-
-.carousel-button:active {
-    color: none;
 }
 
 .carousel-button-prev {

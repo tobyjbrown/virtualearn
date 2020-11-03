@@ -89,7 +89,8 @@ button:active {
 
 /* SVG DIVIDERS */
 
-.custom-shape-divider-top-1604393638 {
+.features-divider,
+.showcase-divider {
     position: absolute;
     top: 0;
     left: 0;
@@ -98,34 +99,19 @@ button:active {
     line-height: 0;
 }
 
-.custom-shape-divider-top-1604393638 svg {
+.features-divider svg,
+.showcase-divider svg {
     position: relative;
     display: block;
     width: calc(140% + 1.3px);
     height: 100px;
 }
 
-.custom-shape-divider-top-1604393638 .shape-fill {
+.features-divider .shape-fill {
     fill: #FFFFFF;
 }
 
-.custom-shape-divider-top-1604393894 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1604393894 svg {
-    position: relative;
-    display: block;
-    width: calc(140% + 1.3px);
-    height: 100px;
-}
-
-.custom-shape-divider-top-1604393894 .shape-fill {
+.showcase-divider .shape-fill {
     fill: #FEE034;
 }
 

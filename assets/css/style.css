@@ -275,7 +275,7 @@ nav ul {
 }
 
 .collapsed-nav li {
-    padding: 1.5em 0;
+    padding: 1em 0;
 }
 
 .collapsed-nav a,
@@ -283,10 +283,6 @@ nav ul {
     text-decoration: none;
     color: white;
     display: inline-block;
-}
-
-.collapsed-nav-logo {
-    margin: 2em auto;
 }
 
 /* RESPONSIVE NAV */

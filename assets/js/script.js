@@ -38,6 +38,18 @@ $dropdownMenu.addEventListener('mouseleave', function() {
     }
 });
 
+// navbar collapse
+
+const $navCollapseBtn = document.getElementById('navBtn');
+const $navCollapseMenu = document.getElementById('collapseMenu');
+
+const openMenu = function() {
+    $navCollapseMenu.style.left = "0px";
+    // console.log('hello');
+}
+
+$navCollapseBtn.addEventListener('click', openMenu);
+
 // carousel component
 
 const $carousel = document.querySelector('.carousel');

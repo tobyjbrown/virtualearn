@@ -139,33 +139,39 @@ nav ul {
     width: 60%;
     max-width: 200px;
     align-self: center;
+    margin: .5em 0;
 }
 
-nav {
+.expanded-nav {
     width: 50%;
     align-self: center;
 }
 
-nav ul {
+.expanded-nav ul,
+.collapsed-nav ul {
     list-style-type: none;
     padding: 0;
     justify-content: space-between;
     font-weight: 100;
+    margin: 0;
 }
 
-nav li,
-nav li button {
+.expanded-nav li,
+.expanded-nav li button,
+.collapsed-nav li,
+.collapsed-nav li button {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-nav li button {
+.expanded-nav li button,
+.collapsed-nav li button {
     font-weight: 200;
     font-size: inherit;
 }
 
-nav a,
-nav li button {
+.expanded-nav a,
+.expanded-nav li button {
     text-decoration: none;
     color: inherit;
     display: inline-block;
@@ -218,6 +224,69 @@ nav li button {
     position: absolute;
     padding-top: 1em;
     background-color: white;
+}
+
+/* NAV COLLAPSE */
+
+.nav-collapse-button {
+    display: none;
+}
+
+.collapsed-menu {
+    position: fixed;
+    left: 100%;
+    top: 0px;
+    bottom: 0px;
+    z-index: 2;
+    background-color: #1d1d1d;
+    width: 100%;
+    transition: all 500ms;
+}
+
+.collapsed-nav-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.collapsed-nav {
+    margin: auto 0;
+}
+
+.collapsed-nav ul {
+    flex-direction: column;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.collapsed-nav li {
+    padding: 1.5em 0;
+}
+
+.collapsed-nav a,
+.collapsed-nav button {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+.collapsed-nav-logo {
+    margin: 2em auto;
+}
+
+/* RESPONSIVE NAV */
+
+@media screen and (max-width: 1180px) {
+
+    .expanded-nav {
+        display: none;
+    }
+
+    .nav-collapse-button {
+        display: block;
+    }
 }
 
 /* HERO */

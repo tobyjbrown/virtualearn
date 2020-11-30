@@ -15,7 +15,7 @@
     <header>
         <div class="container container-header">
             <img class="site-logo"src="assets/imgs/site/virtulearn-logo.png" alt="VirtuaLearn">
-            <nav>
+            <nav class="expanded-nav">
                 <ul>
                     <li><a href="#" class="nav-link nav-link-active">Home</a></li>
                     <li class="dropdown-menu" id="dropdownMenu">
@@ -29,8 +29,31 @@
                     <li><a href="#" class="nav-link" >Contact</a></li>
                 </ul>
             </nav>
+            <button class="nav-collapse-button" id="navBtn">
+                <i class="fas fa-bars fa-3x nav-collapse-button-icon"></i>
+            </button>
         </div>
     </header>
+
+    <section class="collapsed-menu" id="collapseMenu">
+        <div class="container collapsed-nav-container">
+            <nav class="collapsed-nav">
+                <ul>
+                    <li><a href="#" class="nav-link nav-link-active">Home</a></li>
+                    <li class="dropdown-menu" id="dropdownMenu">
+                        <button class="nav-link" id="dropdownMenuBtn">About<i class="fas fa-chevron-down dropdown-arrow dropdown-arrow-closed" id="dropdownArrow"></i></button>
+                        <ul class="dropdown-menu-links" id="dropdownMenuLinks" style="display: none;">
+                            <li><a class="nav-link dropdown-menu-link" href="#">FAQs</a></li>
+                            <li><a class="nav-link dropdown-menu-link" href="#">Testimonials</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="nav-link" >Demo</a></li>
+                    <li><a href="#" class="nav-link" >Contact</a></li>
+                </ul>
+            </nav>
+            <!-- <img class="site-logo collapsed-nav-logo"src="assets/imgs/site/virtulearn-logo.png" alt="VirtuaLearn"> -->
+        </div>
+    </section>
 
     <main>
         <section class="hero">

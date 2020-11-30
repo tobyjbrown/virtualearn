@@ -42,13 +42,18 @@ $dropdownMenu.addEventListener('mouseleave', function() {
 
 const $navCollapseBtn = document.getElementById('navBtn');
 const $navCollapseMenu = document.getElementById('collapseMenu');
+const $navExitBtn = document.getElementById('navExitBtn');
 
 const openMenu = function() {
-    $navCollapseMenu.style.left = "0px";
-    // console.log('hello');
+    $navCollapseMenu.style.left = "0px"
+}
+
+const closeMenu = function() {
+    $navCollapseMenu.style.left = "100%";
 }
 
 $navCollapseBtn.addEventListener('click', openMenu);
+$navExitBtn.addEventListener('click', closeMenu);
 
 // carousel component
 

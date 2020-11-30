@@ -232,6 +232,19 @@ nav ul {
     display: none;
 }
 
+.collapsed-menu-exit-button {
+    position: absolute;
+    z-index: 2;
+    right: 20px;
+    top: 20px;
+    padding: 1em;
+    color: white;
+}
+
+.collapsed-menu-exit-button:active {
+    color: white;;
+}
+
 .collapsed-menu {
     position: fixed;
     left: 100%;
@@ -240,7 +253,7 @@ nav ul {
     z-index: 2;
     background-color: #1d1d1d;
     width: 100%;
-    transition: all 500ms;
+    transition: all ease-out 500ms;
 }
 
 .collapsed-nav-container {
@@ -278,7 +291,7 @@ nav ul {
 
 /* RESPONSIVE NAV */
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1200px) {
 
     .expanded-nav {
         display: none;
@@ -493,7 +506,6 @@ nav ul {
 .carousel-nav-button.current-card {
     background-color: rgba(0, 0, 0, 0.7);
 }
-
 
 /* CAROUSEL CARD CONTENTS */
 

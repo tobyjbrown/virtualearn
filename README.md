@@ -83,3 +83,9 @@ TODO: Replace placeholders with carousel cards, style buttons, add hover effects
 Carousel card placeholders replaced with styled content. Hover effects added to buttons, button utility classes added. Dropdown accessibility improved.
 
 TODO: Add SVG dividers to create modern curve effect, make navbar stick to top of page, add validation to newsletter email input.
+
+5. 30/11/2020
+
+Made navigation responsive using sliding component that enters from left of screen.
+
+TODO: Make rest of page responsive to smaller screen sizes.

@@ -332,6 +332,23 @@ nav ul {
     width: 55%;
 }
 
+/* RESPONSIVE HERO */
+
+@media screen and (max-width: 1480px) {
+
+    .hero-title {
+        font-size: 2.75rem;
+    }
+
+    .hero-tagline {
+        font-size: 1.25rem;
+    }
+
+    .hero-image {
+        width: 50%;
+    }
+}
+
 /* FEATURES */
 
 .features {
@@ -417,6 +434,19 @@ nav ul {
     order: -1;
     width: 500px;
     margin-top: 1em;
+}
+
+/* RESPONSIVE SHOWCASE */
+
+@media screen and (max-width: 1400px) {
+
+    .showcase-text-title {
+        font-size: 2.25rem;
+    }
+
+    .showcase-text-btn {
+        margin-top: 1em;
+    }
 }
 
 /* TESTIMONIALS */
@@ -539,6 +569,22 @@ nav ul {
 
 .carousel-card-text-description {
     margin-bottom: .75em;
+}
+
+/* RESPONSIVE CAROUSEL */
+
+@media screen and (max-width: 1080px) {
+    .carousel-card-text-quote {
+        font-size: 1.25rem;
+    }
+
+    .carousel-card-btn {
+        font-size: .9rem;
+    }
+
+    .carousel-card-img {
+        object-position: center;
+    }
 }
 
 /* FOOTER */

@@ -758,3 +758,24 @@ footer {
     text-align: center;
     margin-top: 1em;
 }
+
+/* RESPONSIVE FOOTER */
+
+@media screen and (max-width: 860px) {
+    .container-footer {
+        flex-direction: column;
+    }
+
+    .footer-newsletter-form-label,
+    .footer-newsletter-form {
+        text-align: center;
+    }
+
+    .footer-social-text {
+        text-align: center;
+    }
+
+    .footer-social-links {
+        margin: 0 auto 2.5em auto;
+    }
+}

@@ -334,7 +334,13 @@ nav ul {
 
 /* RESPONSIVE HERO */
 
+/* medium screens */
+
 @media screen and (max-width: 1480px) {
+
+    .hero-text {
+        width: 45%;
+    }
 
     .hero-title {
         font-size: 2.75rem;
@@ -346,6 +352,26 @@ nav ul {
 
     .hero-image {
         width: 50%;
+    }
+}
+
+/* small screens */
+
+@media screen and (max-width: 860px) {
+
+    .container-hero {
+        flex-direction: column;
+    }
+
+    .hero-text {
+        margin: 2em 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-image {
+        width: 80%;
+        order: -1;
     }
 }
 
@@ -396,6 +422,23 @@ nav ul {
     font-weight: 700;
 }
 
+/* RESPONSIVE FEATURES */
+
+/* small screens */
+
+@media screen and (max-width: 860px) {
+
+    .container-features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features-column {
+        width: 80%;
+        margin-bottom: 2.5em;
+    }
+}
+
 /* SHOWCASE */
 
 .showcase {
@@ -432,11 +475,14 @@ nav ul {
 
 .showcase-img {
     order: -1;
-    width: 500px;
+    width: 50%;
+    max-width: 450px;
     margin-top: 1em;
 }
 
 /* RESPONSIVE SHOWCASE */
+
+/* medium screens */
 
 @media screen and (max-width: 1400px) {
 
@@ -446,6 +492,30 @@ nav ul {
 
     .showcase-text-btn {
         margin-top: 1em;
+    }
+}
+
+/* small screens */
+
+@media screen and (max-width: 860px) {
+
+    .showcase {
+        padding: 4em 0;
+    }
+
+    .container-showcase {
+        flex-direction: column;
+    }
+
+    .showcase-img,
+    .showcase-text {
+        width: 80%;
+        margin: 1em 0;
+    }
+
+    .showcase-text {
+        text-align: center;
+        
     }
 }
 
@@ -468,7 +538,6 @@ nav ul {
 
 .carousel-track-container {
     position: relative;
-    /* background-color: khaki; */
     overflow: hidden;
     height: 100%;
 }
@@ -544,7 +613,7 @@ nav ul {
     height: 80%;
     background-color: rgba(255, 255, 255, 0.632);
     border-radius: 20px;
-    box-shadow: 5px 5px 30px rgb(145, 145, 145);
+    box-shadow: 5px 5px 20px rgb(145, 145, 145);
     margin: 0 auto;
     -webkit-transform:translate3d(0,0,0); /* To avoid carousel flickering */
 }
@@ -573,6 +642,8 @@ nav ul {
 
 /* RESPONSIVE CAROUSEL */
 
+/* medium screens */
+
 @media screen and (max-width: 1080px) {
     .carousel-card-text-quote {
         font-size: 1.25rem;
@@ -584,6 +655,30 @@ nav ul {
 
     .carousel-card-img {
         object-position: center;
+        height: 300px;
+    }
+}
+
+/* small screens */
+
+@media screen and (max-width: 860px) {
+    .carousel {
+        height: 800px;
+    }
+
+    .carousel-card-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .carousel-card-text {
+        text-align: center;
+        width: 80%;
+    }
+
+    .carousel-card-img {
+        width: 60%;
+        margin-bottom: 1em;
     }
 }
 
@@ -628,6 +723,7 @@ footer {
 .footer-img {
     /* width: 20%; */
     justify-self: self-start;
+    width: 30%;
     align-self: center;
     max-width: 350px;
 }
